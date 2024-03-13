@@ -1,4 +1,7 @@
 pdf2image
 pytesseract
+opencv_python
+numpy
+Pillow
 pytest
-FastAPI
+Fastapi
