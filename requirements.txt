@@ -1,0 +1,4 @@
+pdf2image
+pytesseract
+pytest
+FastAPI
