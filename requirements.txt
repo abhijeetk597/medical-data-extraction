@@ -5,3 +5,5 @@ numpy
 Pillow
 pytest
 Fastapi
+uvicorn
+python-multipart

@@ -9,7 +9,7 @@ def preprocess_image(img):
         255,
         cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
         cv2.THRESH_BINARY,
-        63, # block size (after trial and error)
-        12  # constant (after trial and error)
+        65, # block size (after trial and error)
+        13  # constant (after trial and error)
     )
     return processed_image
