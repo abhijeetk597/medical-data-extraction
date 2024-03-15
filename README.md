@@ -6,6 +6,8 @@ Also this project involved creation of a backend server which will process data 
 https://youtu.be/Hf9ha8cl6tw
 <video src="mde.mp4" width="560" height="315" controls></video>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Hf9ha8cl6tw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![alt text](https://img.youtube.com/vi/video-id/0.jpg)](https://www.youtube.com/watch?v=Hf9ha8cl6tw)
+[![Alternate Text]({})]({https://www.youtube.com/watch?v=Hf9ha8cl6tw} "medical-data-extraction")
 
 ## Directory Structure of Project
 ```
