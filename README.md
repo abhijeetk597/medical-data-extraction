@@ -3,7 +3,9 @@ An OCR project to extract information about Patient and Prescription details fro
 Also this project involved creation of a backend server which will process data extraction requests.
 
 ## Demo
-[![Demo video](https://img.youtube.com/vi/Hf9ha8cl6tw/0.jpg)](https://www.youtube.com/watch?v=Hf9ha8cl6tw)
+
+https://github.com/abhijeetk597/medical-data-extraction/assets/138308825/3d5d90e8-2858-4831-b1d5-97a3874f256c
+
 
 ## Directory Structure of Project
 ```
