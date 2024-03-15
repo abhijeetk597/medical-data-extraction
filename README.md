@@ -3,7 +3,9 @@ An OCR project to extract information about Patient and Prescription details fro
 Also this project involved creation of a backend server which will process data extraction requests.
 
 ## Demo
-<video src="mde.mp4" width="960" height="540" controls></video>
+https://youtu.be/Hf9ha8cl6tw
+<video src="mde.mp4" width="560" height="315" controls></video>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Hf9ha8cl6tw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Directory Structure of Project
 ```
