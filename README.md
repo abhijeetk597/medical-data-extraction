@@ -39,8 +39,6 @@ medical-data-extraction
 │   │       test_prescription_parser.py
 │   │
 │   └───uploads
-│           8803aa35-fb35-4517-b1eb-cccf2696bf9c.pdf
-│           test.pdf
 │
 ├───Notebooks
 │       patient_details_parser.ipynb
