@@ -1,5 +1,9 @@
-# medical-data-extraction
-An OCR project to extract information about patient and prescription details.
+# Medica Data Extraction
+An OCR project to extract information about Patient and Prescription details from PDF Documents.
+Also this project involved creation of a backend server which will process data extraction requests.
+
+## Demo
+<video src="mde.mp4" width="960" height="540" controls></video>
 
 ## Directory Structure of Project
 ```
