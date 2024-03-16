@@ -27,7 +27,6 @@ medical-data-extraction
 │   │           pre_2.pdf
 │   │
 │   ├───src
-│   │       app.py               //Streamlit App
 │   │       extractor.py
 │   │       main.py              //Fastapi Backend Server
 │   │       parser_generic.py
@@ -40,10 +39,13 @@ medical-data-extraction
 │   │
 │   └───uploads
 │
+├───frontend
+│       app.py              //Streamlit app
+│
 ├───Notebooks
-│       patient_details_parser.ipynb
-│       prescription_parser.ipynb
-│       RegEx.ipynb
+│       01_prescription_parser.ipynb
+│       02_patient_details_parser.ipynb
+│       03_RegEx.ipynb
 │    
 └───reference
         tesseract_papar_by_google.pdf
