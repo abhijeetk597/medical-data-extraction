@@ -54,4 +54,4 @@ if file:
             if st.button(label="Submit", type="primary"):
                 for key in list(st.session_state.keys()):
                     del st.session_state[key]
-                st.success('Details successfully recored.')
+                st.success('Details successfully recorded.')
