@@ -35,7 +35,7 @@ Machine learning and AI play significant roles in OCR technology. Here's how the
 
 Overall, machine learning and AI techniques are essential components of OCR technology, enabling it to accurately recognize text from images and scanned documents across various domains and languages.
 
-OCR (Optical Character Recognition) technology finds applications in various domains due to its ability to convert images containing text into machine-readable data. Here are some common applications and domains where OCR is used:
+Here are some common applications and domains where OCR is used:
 
 1. **Document Digitization**: OCR is extensively used to convert scanned documents, PDFs, and images into editable and searchable text. This is useful in offices, libraries, and archives for digitizing large volumes of documents for easier storage, retrieval, and sharing.
 
