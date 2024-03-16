@@ -18,7 +18,7 @@ https://github.com/abhijeetk597/medical-data-extraction/assets/138308825/3d5d90e
 7. [Directory Structure](#a7)
 8. [If you are cloning my repo?](#a8)
 
-### <a name="a1">1. What is OCR?</a>
+## <a name="a1">1. What is OCR?</a>
 OCR stands for Optical Character Recognition. It's a technology that enables the conversion of different types of documents, such as scanned paper documents, PDF files, or images captured by a digital camera, into editable and searchable data. Essentially, OCR software identifies text within images or scanned documents and converts it into machine-readable text.
 
 Machine learning and AI play significant roles in OCR technology. Here's how they're linked:
@@ -58,7 +58,7 @@ OCR (Optical Character Recognition) technology finds applications in various dom
 10. **Education**: OCR is employed in educational institutions for tasks like grading exams, digitizing textbooks, and converting handwritten notes into editable text. It assists in creating accessible learning materials and automating administrative processes.
 
 
-### <a name="a2">2. Introduction to Project</a>
+## <a name="a2">2. Introduction to Project</a>
 > Whenever we go to hospital, we always fill up some kind of forms and our medical history is created using those forms, prescriptions, test reports. Sometimes, this medical history is used for other purposes like claiming health insurance etc
 
 >Health Insurance company might receive thousands of such documents from multiple sources and creating a record of useful information from customers medical history is a very cumbersome task and requires huge manpower. And hence this kind of tasks can be sped up using OCR technology.
@@ -70,13 +70,13 @@ For this project we have two types of Medical Documents.
 We are going to extract some important fields from these documents.
 ![4.jpg](4.jpg)
 
-#### Why this project?
+### Why this project?
 Though I have been learning Data Science, then why am I doing this project? Mainly there are 3 reasons.
 01. OCR is a subset of Computer Vision. OCR can be used in an NLP project like summarizing text using LLM.
 02. This project involves very fundamental concepts of Python programming like OOP and Modular programming which are industry best practices.
 03. Also this project involves creation of a backend server using FastAPI, which is known for its performance and many world-renowned companies such as Uber, Netflix and Microsoft use FastAPI to build their applications.
 
-### <a name="a3">3. Project Execution Steps</a>
+## <a name="a3">3. Project Execution Steps</a>
 - **Step 1:** Convert pdf to image using `pdf2image` library
 - **Step 2:** Preprocess the image (Apply `adaptive thresholding and binarization using OpenCV2`)
 - **Step 3:** Extracting text from image by passing it through `tesseract OCR engine`
@@ -85,14 +85,14 @@ Though I have been learning Data Science, then why am I doing this project? Main
 - **Step 6:** To create a Demo of `frontend UI using Streamlit` and connect it with our FastAPI server using Python Requests module.
 ![Project Execution Steps](8.jpg)
 
-### <a name="a4">4. Code Walkthrough</a>
+## <a name="a4">4. Code Walkthrough</a>
 Explore notebooks and source code of this project.
  - Notebook 1: [Prescription_parser](https://github.com/abhijeetk597/medical-data-extraction/blob/main/Notebooks/01_prescription_parser.ipynb)
  - Notebook 2: [Patient_details_parser](https://github.com/abhijeetk597/medical-data-extraction/blob/main/Notebooks/02_patient_details_parser.ipynb)
  - Backend: [Source code directory](https://github.com/abhijeetk597/medical-data-extraction/tree/main/backend/src)
  - Frontend: [Streamlit app](https://github.com/abhijeetk597/medical-data-extraction/blob/main/frontend/app.py)
 
-### <a name="a5">5. What did I learn through this project?</a>
+## <a name="a5">5. What did I learn through this project?</a>
 - How to use OCR for real world projects and key image processing concepts like thresholding using `OpenCV2`.
 - Polished up my Python coding skills by using `OOP, code refactoring and modular programming`.
 - Setting up of a backend server using `FastAPI` framework.
@@ -100,13 +100,13 @@ Explore notebooks and source code of this project.
 - How to use `Postman` for API testing.
 - I could connect Streamlit frontend with FastAPI backend server using `Python requests` module.
 
-### <a name="a6">6. Challenges faced during this project</a>
+## <a name="a6">6. Challenges faced during this project</a>
 - In adapative thresholding, it requires lot of trial and error to reach optimum values of block size and constant.
 - Pytest is not properly integrated with VSCode.
 - Also I faced path related errors during unit testing even in PyCharm.
 - When creating streamlit app, there are very few practical instructions available on internet for connecting it with a backend server and sending files across.
 
-### <a name="a7">7. Directory Structure of Project</a>
+## <a name="a7">7. Directory Structure of Project</a>
 ```
 medical-data-extraction
 │   .gitignore
@@ -149,7 +149,7 @@ medical-data-extraction
 └───reference
         tesseract_papar_by_google.pdf
 ```
-### <a name="a8">8. If you are cloning this repository?</a>
+## <a name="a8">8. If you are cloning this repository?</a>
 - Install all dependancies from `requirements.txt`
 - For `pdf2image` you need to [download `poppler`](https://github.com/belval/pdf2image?tab=readme-ov-file#how-to-install)
 - Install Tesseract OCR Engine in your PC
