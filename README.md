@@ -21,19 +21,7 @@ https://github.com/abhijeetk597/medical-data-extraction/assets/138308825/3d5d90e
 ## <a name="a1">1. What is OCR?</a>
 OCR stands for Optical Character Recognition. It's a technology that enables the conversion of different types of documents, such as scanned paper documents, PDF files, or images captured by a digital camera, into editable and searchable data. Essentially, OCR software identifies text within images or scanned documents and converts it into machine-readable text.
 
-Machine learning and AI play significant roles in OCR technology. Here's how they're linked:
-
-1. **Character Recognition**: At the core of OCR is the ability to recognize characters within images or scanned documents. Machine learning algorithms, particularly deep learning models like convolutional neural networks (CNNs), are commonly used for this task. These algorithms are trained on vast amounts of labeled data to recognize patterns and features within images that correspond to different characters.
-
-2. **Feature Extraction**: OCR systems employ various techniques to extract features from images that help in character recognition. These features could include edges, corners, texture, and more. Machine learning algorithms are often used to automatically learn and extract these features from images, improving the accuracy of character recognition.
-
-3. **Language Modeling**: OCR systems need to understand the context of the text being recognized to improve accuracy. Language models, which are a type of AI model, are used to predict and correct errors in character recognition based on the context of the surrounding text. This helps in improving accuracy, especially in scenarios where individual characters might be ambiguous.
-
-4. **Training and Adaptation**: OCR systems can be trained and adapted to specific domains or languages using machine learning techniques. By providing the system with labeled training data relevant to the target domain or language, machine learning algorithms can fine-tune the OCR system to perform better in those specific contexts.
-
-5. **Continuous Improvement**: OCR systems can continuously improve their performance over time through machine learning and AI techniques. By collecting user feedback and data on recognition errors, these systems can adapt and update their models to improve accuracy and handle new challenges more effectively.
-
-Overall, machine learning and AI techniques are essential components of OCR technology, enabling it to accurately recognize text from images and scanned documents across various domains and languages.
+Machine learning and AI play significant roles in OCR technology. Machine learning (ML) powers OCR to turn images into text. ML algorithms like convolutional neural networks (CNNs) are trained on massive datasets to recognize characters. ML also helps extract key features from images and utilizes language models to understand context and improve accuracy, especially for ambiguous characters. OCR systems continuously learn and adapt to specific domains and languages through ML, ensuring ever-better performance.
 
 Here are some common applications and domains where OCR is used:
 
