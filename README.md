@@ -19,7 +19,7 @@ https://github.com/abhijeetk597/medical-data-extraction/assets/138308825/3d5d90e
 6. [Challenges Faced](#a6)
 7. [Directory Structure](#a7)
 8. [If you are cloning my repo?](#a8)
-9. [Update 1: Store data into MySQL DB after verification in UI](#a9)
+9. [🚀 Update 1: Store data into MySQL DB after verification in UI](#a9)
 
 ## <a name="a1">1. What is OCR?</a>
 
@@ -161,7 +161,7 @@ medical-data-extraction
   > [Demo video to clone and run this project in your machine.](https://youtu.be/UWmOePHzePM)
 - Update: Now you will have to link you db for storing data. Python code updated accordingly, and script for creation of db table and SPs is uploaded in the repo.
 
-## <a name="a9">8. Update 1: Store data into MySQL DB after verification in UI</a>
+## <a name="a9">9. 🚀 Update 1: Store data into MySQL DB after verification in UI</a>
 
 - In the Streamlit UI I have kept a submit button but there was no any event listener for the button. Now I have integrated DB functionality and you can store the data on UI back into MySQL Database using Stored Procedures.
 - In the directory `mysql_scripts`, you can find queries used for creation of table and stored procedures. In the `backend\scr` directory a new module `db_utils` added, where you can find code for how you can connect your database with python. In the `main.py` 2 new POST methods created for updating the db tables.
