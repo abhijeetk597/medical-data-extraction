@@ -3,6 +3,7 @@ import uvicorn
 from extractor import extract
 import uuid
 import os
+from db_utils import DBUtility
 
 app = FastAPI()
 
@@ -25,8 +26,37 @@ def extract_from_doc(
 
     if os.path.exists(FILE_PATH):
         os.remove(FILE_PATH)
-
+    print(data)
     return data
+
+@app.post("/patient_details")
+def add_new_patient(
+    name: str = Form(...),
+    phone: str = Form(...),
+    vacc_status: str = Form(...),
+    med_problems: str = Form(...),
+    has_insurance: str = Form(...),
+):  
+    new_patient = (name, phone, vacc_status, med_problems, has_insurance)
+
+    db = DBUtility()
+    resp = db.update_table(table='patient', data=new_patient)
+    return resp
+    
+@app.post("/prescription")
+def add_new_prescription(
+    name: str = Form(...),
+    address: str = Form(...),
+    medicines: str = Form(...),
+    directions: str = Form(...),
+    refill: str = Form(...)
+):
+    new_prescription = (name, address, medicines, directions, refill)
+
+    db = DBUtility()
+    resp = db.update_table(table='prescription', data=new_prescription)
+    return resp
+
 
 
 if __name__ == "__main__":

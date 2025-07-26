@@ -3,9 +3,10 @@ import requests
 from pdf2image import convert_from_bytes
 import ast
 import time
+import json
 
 POPPLER_PATH = r"C:/poppler-24.02.0/Library/bin"
-URL = "http://127.0.0.1:8000/extract_from_doc"
+URL = "http://127.0.0.1:8000/{}"
 
 st.title("Medical Data Extractor 👩‍⚕️")
 
@@ -21,7 +22,7 @@ with col4:
         payload = {'file_format': file_format}
         files=[('file', file.getvalue())]
         headers = {}
-        response = requests.request("POST", URL, headers=headers, data=payload, files=files)
+        response = requests.request("POST", URL.format('extract_from_doc'), headers=headers, data=payload, files=files)
         dict_str = response.content.decode("UTF-8")
         data = ast.literal_eval(dict_str)
         if data:
@@ -52,6 +53,33 @@ if file:
                 med_problems = st.text_input(label="Medical Problems", value=st.session_state["medical_problems"])
                 has_insurance = st.text_input(label="Does patient have taken insurance?", value=st.session_state["has_insurance"])
             if st.button(label="Submit", type="primary"):
+                if file_format == "patient_details":
+                    response = requests.request("POST", 
+                        URL.format(file_format), 
+                        headers={}, 
+                        data={'name': name, 
+                            'phone': phone, 
+                            'vacc_status': vacc_status, 
+                            'med_problems': med_problems, 
+                            'has_insurance': has_insurance})
+                    resp = json.loads(response.content.decode("UTF-8"))
+                    if resp:
+                        st.success(f'Details successfully recorded.')
+                    else:
+                        st.error('Error is saving data into Database')
+                elif file_format == "prescription":
+                    response = requests.request("POST",
+                                                URL.format(file_format), 
+                                                headers={}, 
+                                                data={'name': name, 
+                                                      'address':address,
+                                                      'medicines': medicines,
+                                                      'directions': directions, 
+                                                      'refill': refill})
+                    resp = json.loads(response.content.decode("UTF-8"))
+                    if resp:
+                        st.success(f'Details successfully recorded.')
+                    else:
+                        st.error('Error is saving data into Database')
                 for key in list(st.session_state.keys()):
                     del st.session_state[key]
-                st.success('Details successfully recorded.')
